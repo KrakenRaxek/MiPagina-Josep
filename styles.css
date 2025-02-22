@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Dancing Script', cursive; /* Nueva tipografía cursiva */
+    background-color: white;
+    background-image: url('imagenes/camara-vintage.png'); /* Icono de cámara vintage */
+    background-repeat: no-repeat; /* No repetir */
+    background-position: right bottom; /* Ubicación: lado derecho abajo */
+    background-size: 450px; /* Tamaño del icono */
+}
+
+header {
+    background-color: gray;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em; /* Aumenta el tamaño de las letras del menú */
+    padding: 10px 15px; /* Agrega espacio alrededor del texto */
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Cambia de color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+.portada {
+    background: url('imagenes/paisaje.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.perfil-img {
+    width: 200px; /* Tamaño de la imagen */
+    height: auto;
+    border-radius: 50%; /* Imagen en forma de círculo */
+    display: block;
+    margin: 0 auto 20px auto; /* Centrar la imagen */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+    font-size: 4em; /* Aumenta el tamaño del texto */
+    font-weight: bold;
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    margin: 0;
+}
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700; /* Hace que los títulos sean más gruesos */
+
+p {
+    font-size: 1.2em; /* Hace que el texto sea más legible */
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
